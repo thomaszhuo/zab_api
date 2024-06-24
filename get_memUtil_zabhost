@@ -1,0 +1,16 @@
+get http://10.10.10.99/zabbix/api_jsonrpc.php
+
+{
+    "jsonrpc": "2.0",
+    "method": "history.get",
+    "params": {
+        "output": "extend",
+        "history": 0,
+        "itemids": ["42270"],
+        "sortfield": "clock",
+        "sortorder": "DESC",
+        "limit": 5
+    },
+    "auth": "910dbe2050c2ee5630efedff4f28ba3f",
+    "id": 3
+}
